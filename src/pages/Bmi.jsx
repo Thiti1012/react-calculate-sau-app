@@ -5,7 +5,7 @@ import { Link } from "react-router";
 export default function Bmi() {
   return (
     <div>
-      <div className="mt-30 mx-auto w-300  border-2 border-gray-100 shadow-2xl flex flex-col items-center p-15">
+      <div className="mt-10 mx-auto w-200  border-2 border-gray-100 shadow-2xl flex flex-col items-center p-15">
         {/* แสดงชื่อคำนวณ */}
         <p className="text-3xl font-bold font-kanit text-center mt-5">
           BMI (ดัชนีมวลกาย)
@@ -44,13 +44,13 @@ export default function Bmi() {
           </button>
         </form>
         {/* ส่วนแสดงผล */}
-        <div className='flex items-center justify-center mt-5 gap-5'>
-            <p className='font-kanit font-blod mt-5'>ค่า BMI ที่คำวนวณได้</p>
-            <p className='font-kanit font-blod mt-5 text-blue-500'>0.00</p>
+        <div className="flex items-center justify-center gap-5">
+          <p className="font-kanit font-blod mt-5">ค่า BMI ที่คำวนวณได้</p>
+          <p className="font-kanit font-blod mt-5 text-blue-500">0.00</p>
         </div>
         {/* ลิ้งกลับไปหน้า Home */}
         <Link to="/">
-          <button className="mt-2 w-full cursor-pointer bg-gray-500 hover:bg-gray-400 text-white font-bold py-2 px-4 border-b-4 ">
+          <button className="mt-2 w-full cursor-pointer bg-gray-400 hover:bg-gray-300 text-white font-bold py-2 px-4 border-b-4 ">
             กลับไปหน้าหลัก
           </button>
         </Link>
